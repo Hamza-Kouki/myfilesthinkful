@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+    
+    /*To complete the drill below, you'll need to write two rulesets. The first should target all list items that are descendants of an element with the .foo class. The second should target all list items that are direct children of the.bar class.
+
+In the end result, the first two list items on the page ("foo" and "bar") should have 1px solid red borders, but not the second two ("bizz and bang"). In the numbered list, all first level list items should have a 1px solid green border, but the second level ones (that is, the steps for washing fruits and veggies) should not.*/
+    <title>selectors-drill3</title>
+    <style>
+    main {
+  padding: 30px;
+}
+        .foo > li{border: 1px solid red ;}
+        .bar >li{ border: 1px solid green;}
+    </style>
+    </head>
+<body>
+    
+    <main>
+  <ul class='foo'>
+    <li>foo</li>
+    <li>bar</li>
+  </ul>
+  <ul>
+    <li>bizz</li>
+    <li>bang</li>
+  </ul>
+  <ol class='bar'>
+    <li>Buy fruits and vegetables.</li>
+    <li>
+      Wash fruits and vegetables.
+      <ol>
+        <li>turn on faucet</li>
+        <li>put f/v under water</li>
+        <li>scrub</li>
+      </ol>
+    </li>
+    <li>Eat fruits and vegetables.</li>
+    <li>Enjoy better wellbeing.</li>
+  </ol>
+</main>
+    </body>
+</html>
